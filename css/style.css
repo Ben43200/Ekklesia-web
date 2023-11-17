@@ -489,7 +489,7 @@ footer {
   justify-content: center;
   align-content: center;
   align-items: center;
-  width: 100vw;
+  width: 100%;
 }
 
 .box-image > img {
@@ -549,6 +549,7 @@ p {
   grid-auto-columns: auto;
   justify-content: center;
   align-content: center;
+  width: 100%;
 }
 @media screen and (min-width: 1024px) {
   .box-info {
