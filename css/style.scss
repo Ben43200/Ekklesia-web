@@ -411,7 +411,11 @@ nav .wrapper {
 nav input {
   display: none;
 }
-
+.logo {
+  width: 100px;
+  height: 100%;
+  border-radius: 7px;
+}
 // .body-text {
 //   position: absolute;
 //   top: 50%;
