@@ -500,7 +500,6 @@ footer {
 @media screen and (min-width: 1024px) {
   .box-image > img {
     height: 500px;
-    width: 500px;
   }
 }
 
