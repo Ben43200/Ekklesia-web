@@ -453,6 +453,7 @@ header {
 
 main {
   grid-area: main;
+  padding: 0px;
   row-gap: 20px;
 }
 
@@ -535,10 +536,12 @@ h2 {
   font-size: 20px;
   font-weight: 800;
   text-align: center;
+  padding: 10px 0px;
 }
 
 p {
   font-weight: 500;
+  font-size: 1.5rem;
 }
 
 .box-info {
