@@ -500,11 +500,17 @@ footer {
 @media screen and (min-width: 1024px) {
   .box-image > img {
     height: 500px;
+    width: 500px;
   }
 }
 
 .box-image {
-  width: 500px;
+  width: 100%;
+}
+@media screen and (min-width: 1024px) {
+  .box-image {
+    width: 450px;
+  }
 }
 
 .grid-container {
@@ -530,6 +536,7 @@ footer {
   align-items: stretch;
   place-self: center;
   box-shadow: 10px 5px 5px #131f53;
+  width: 100%;
 }
 
 h2 {

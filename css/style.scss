@@ -526,15 +526,16 @@ footer {
   object-fit: cover;
   @include media(desktop) {
     height: 500px;
+    width: 500px;
   }
 }
 
 .box-image {
-  width: 500px;
-  // display: grid;
-  // display: flex;
-  // align-items: center;
-  // justify-content: center;
+  // width: 500px;
+  width: 100%;
+  @include media(desktop) {
+    width: 450px;
+  }
 }
 
 .grid-container {
@@ -558,6 +559,7 @@ footer {
   align-items: stretch;
   place-self: center;
   box-shadow: 10px 5px 5px #131f53;
+  width: 100%;
 }
 
 h2 {
