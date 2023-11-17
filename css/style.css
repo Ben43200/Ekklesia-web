@@ -428,10 +428,7 @@ h1 {
   color: white;
   text-align: center;
   text-align: center;
-  padding-top: 60px;
-  display: flex;
-  justify-content: center;
-  align-content: center;
+  padding-top: 50px;
 }
 @media screen and (min-width: 1024px) {
   h1 {
@@ -456,6 +453,7 @@ header {
 
 main {
   grid-area: main;
+  row-gap: 20px;
 }
 
 footer {
@@ -469,7 +467,15 @@ body {
   height: 100vh;
   width: 100vw;
   row-gap: 20px;
+  text-align: justify;
+  margin: 0;
 }
+@media screen and (min-width: 1024px) {
+  body {
+    padding: 0;
+  }
+}
+
 footer {
   background-color: #3a3b3c;
   height: 80px;
@@ -478,6 +484,10 @@ footer {
 .title-container {
   height: 10rem;
   background-color: #131f53;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
 }
 
 .box-image > img {
@@ -506,8 +516,7 @@ footer {
 }
 @media screen and (min-width: 1024px) {
   .grid-container {
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
   }
 }
 
@@ -517,4 +526,28 @@ footer {
   justify-content: center;
   align-items: stretch;
   place-self: center;
+  box-shadow: 10px 5px 5px #131f53;
+}
+
+h2 {
+  font-size: 20px;
+  font-weight: 800;
+  text-align: center;
+}
+
+p {
+  font-weight: 500;
+}
+
+.box-info {
+  box-shadow: inset 5px -3px 7px 2px rgba(0, 0, 0, 0.99);
+  padding: 10px;
+  display: grid;
+  grid-auto-columns: auto;
+  justify-content: center;
+}
+@media screen and (min-width: 1024px) {
+  .box-info {
+    grid-auto-columns: 600px;
+  }
 }/*# sourceMappingURL=style.css.map */
