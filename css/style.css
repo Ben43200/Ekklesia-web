@@ -489,6 +489,7 @@ footer {
   justify-content: center;
   align-content: center;
   align-items: center;
+  width: 100vw;
 }
 
 .box-image > img {
@@ -500,15 +501,6 @@ footer {
 @media screen and (min-width: 1024px) {
   .box-image > img {
     height: 500px;
-  }
-}
-
-.box-image {
-  width: 100%;
-}
-@media screen and (min-width: 1024px) {
-  .box-image {
-    width: 450px;
   }
 }
 

@@ -517,7 +517,7 @@ footer {
   justify-content: center;
   align-content: center;
   align-items: center;
-  // width: 100vw;
+  width: 100vw;
 }
 
 .box-image > img {
@@ -530,13 +530,13 @@ footer {
   }
 }
 
-.box-image {
-  // width: 500px;
-  width: 100%;
-  @include media(desktop) {
-    width: 450px;
-  }
-}
+// .box-image {
+//   // width: 500px;
+//   width: 100%;
+//   @include media(desktop) {
+//     width: 450px;
+//   }
+// }
 
 .grid-container {
   display: grid;
