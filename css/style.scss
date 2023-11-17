@@ -494,6 +494,7 @@ body {
   row-gap: 20px;
   text-align: justify;
   margin: 0;
+  padding: 0;
 
   @include media(desktop) {
     // grid-template-areas:
