@@ -446,14 +446,14 @@ h1 {
   }
 }
 
-body {
-  margin: 0;
-  padding: 0px;
-  text-align: justify;
-  @include media(desktop) {
-    padding: 0px;
-  }
-}
+// body {
+//   margin: 0;
+//   padding: 0px;
+//   text-align: justify;
+//   @include media(desktop) {
+//     padding: 0px;
+//   }
+// }
 
 header {
   grid-area: navbar;
@@ -494,7 +494,7 @@ body {
   row-gap: 20px;
   text-align: justify;
   margin: 0;
-  padding: 0px;
+  padding: 0;
 
   @include media(desktop) {
     // grid-template-areas:
