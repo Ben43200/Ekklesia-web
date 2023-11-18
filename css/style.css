@@ -562,4 +562,10 @@ p {
   .box-info:nth-child(odd) {
     grid-area: comments;
   }
+}
+
+.prestations-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }/*# sourceMappingURL=style.css.map */
