@@ -575,7 +575,8 @@ footer {
   justify-content: center;
   align-items: stretch;
   place-self: center;
-  box-shadow: 10px 5px 5px #131f53;
+  // box-shadow: 10px 5px 5px #131f53;
+  box-shadow: 5px -3px 7px 2px #4054b2;
   width: 100%;
   height: 300px;
   border-radius: 10px;
@@ -602,7 +603,7 @@ p {
 }
 
 .box-info {
-  box-shadow: inset 5px -3px 7px 2px rgba(0, 0, 0, 0.99);
+  box-shadow: 5px -3px 7px 2px #4054b2;
   padding: 10px;
   display: grid;
   grid-auto-columns: auto;
