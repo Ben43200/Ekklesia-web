@@ -525,13 +525,14 @@ footer {
 
 .title-container {
   height: 10rem;
-  background-color: #131f53;
+  // background-color: #131f53;
   display: flex;
   justify-content: center;
   align-content: center;
   align-items: center;
   width: 100%;
   border-radius: 10px;
+  background-color: #61a567;
 }
 
 .box-image > img {
