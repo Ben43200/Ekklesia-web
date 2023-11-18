@@ -152,6 +152,7 @@ nav {
   margin: 0;
   padding: 0;
   background: #4054b2;
+  border-radius: 0px 10px;
 }
 
 nav .wrapper {
@@ -490,6 +491,7 @@ footer {
   align-content: center;
   align-items: center;
   width: 100%;
+  border-radius: 10px;
 }
 
 .box-image > img {
