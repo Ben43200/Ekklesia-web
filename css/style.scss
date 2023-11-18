@@ -556,8 +556,9 @@ footer {
   display: grid;
   grid-template-columns: 1fr;
   // padding-top: 40px;
-  grid-template-rows: repeat(8, 1fr);
+  grid-template-rows: repeat(8, auto);
   grid-auto-rows: 60px;
+  gap: 20px;
   // grid-gap: 20px;
 
   @include media(desktop) {
@@ -625,9 +626,11 @@ p {
 //   }
 // }
 
-.box-info:first-child {
+.box-info:first-of-type {
+  margin-bottom: 20px;
   @include media(desktop) {
     grid-auto-columns: auto;
+    margin-bottom: 0;
   }
 }
 

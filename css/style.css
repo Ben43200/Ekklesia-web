@@ -502,8 +502,9 @@ footer {
 .grid-container {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: repeat(8, 1fr);
+  grid-template-rows: repeat(8, auto);
   grid-auto-rows: 60px;
+  gap: 20px;
 }
 @media screen and (min-width: 1024px) {
   .grid-container {
@@ -555,9 +556,13 @@ p {
   border-radius: 10px;
 }
 
+.box-info:first-of-type {
+  margin-bottom: 20px;
+}
 @media screen and (min-width: 1024px) {
-  .box-info:first-child {
+  .box-info:first-of-type {
     grid-auto-columns: auto;
+    margin-bottom: 0;
   }
 }
 
