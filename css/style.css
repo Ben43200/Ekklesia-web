@@ -552,15 +552,10 @@ p {
   align-content: center;
   width: 100%;
 }
-@media screen and (min-width: 1024px) {
-  .box-info {
-    grid-auto-columns: 600px;
-  }
-}
 
 @media screen and (min-width: 1024px) {
-  .box-info:nth-child(odd) {
-    grid-area: comments;
+  .box-info:first-child {
+    grid-auto-columns: auto;
   }
 }
 
@@ -568,4 +563,10 @@ p {
   display: flex;
   flex-direction: column;
   gap: 20px;
+}
+
+.box-info > ul > li {
+  list-style: decimal;
+  margin-left: 20px;
+  padding: 5px 0px;
 }/*# sourceMappingURL=style.css.map */
