@@ -580,4 +580,55 @@ p {
   padding: 5px 0px;
   font-weight: 500;
   font-size: 1rem;
+}
+
+/* number of images*/
+.gallery {
+  --d: 20s; /* duration */
+  display: grid;
+  overflow: hidden;
+  width: 380px;
+  padding-top: 20px;
+  place-self: center;
+  -webkit-mask: linear-gradient(90deg, rgba(0, 0, 0, 0), #000 10% 90%, rgba(0, 0, 0, 0));
+}
+@media screen and (min-width: 768px) {
+  .gallery {
+    width: 700px;
+  }
+}
+
+.gallery > img {
+  grid-area: 1/1;
+  width: 100%;
+  aspect-ratio: 1.5;
+  -o-object-fit: cover;
+     object-fit: cover;
+  animation: r var(--d) linear infinite;
+}
+
+.gallery > img:nth-child(2) {
+  animation-delay: calc(-0.25* var(--d));
+}
+
+.gallery > img:nth-child(3) {
+  animation-delay: calc(-0.5* var(--d));
+}
+
+.gallery > img:nth-child(4) {
+  animation-delay: calc(-0.75* var(--d));
+}
+
+@keyframes r {
+  75% {
+    transform: translate(-300%);
+  }
+  75.01% {
+    transform: translate(100%);
+  }
+}
+.gallery-container {
+  margin: 0;
+  display: grid;
+  place-content: center;
 }/*# sourceMappingURL=style.css.map */
