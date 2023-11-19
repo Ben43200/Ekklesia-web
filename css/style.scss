@@ -166,11 +166,12 @@ nav {
   // background: #242526;
   background: #4054b2;
   background-size: 100% 100%;
+  width: 100%;
   border-radius: 0px 0px 10px 10px;
-  @include media(tablet) {
+  @media only screen and (min-width: 391px) {
     // position: relative;
     // width: 1240px;
-    width: 100%;
+    // width: 100%;
 
     background-image: linear-gradient(
       85deg,
