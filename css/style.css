@@ -157,7 +157,7 @@ nav {
 }
 @media screen and (min-width: 1024px) {
   nav {
-    position: relative;
+    width: 1240px;
   }
 }
 
