@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
 html,
 body,
@@ -132,7 +133,7 @@ table {
 }
 
 body {
-  font-family: "Poppins", sans-serif;
+  font-family: "garamond", sans-serif;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -142,7 +143,7 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
+  font-weight: 700;
 }
 
 nav {
@@ -198,7 +199,7 @@ nav .wrapper {
 }
 
 .nav-links li a:hover {
-  background: #3a3b3c;
+  border-bottom: 5px solid black;
 }
 
 .nav-links .mobile-item {
@@ -551,7 +552,7 @@ h2 {
 
 p {
   font-weight: 500;
-  font-size: 1rem;
+  font-size: 1.5rem;
 }
 
 .box-info {
@@ -586,7 +587,7 @@ p {
   margin-left: 20px;
   padding: 5px 0px;
   font-weight: 500;
-  font-size: 1rem;
+  font-size: 1.5rem;
 }
 
 /* number of images*/
