@@ -155,12 +155,11 @@ nav {
   background: #4054b2;
   background-size: 100% 100%;
   border-radius: 0px 0px 10px 10px;
-  background-image: linear-gradient(85deg, #352361 1%, rgb(64, 84, 178) 55%);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#ffad26), to(#ff7701), color-stop(0.5, #fea026), color-stop(0.5, #ffffff), color-stop(0.5, #ffffff), color-stop(0.5, #ffffff), color-stop(0.5, #ff8b00));
 }
 @media screen and (min-width: 1024px) {
   nav {
     width: 1240px;
-    background-image: linear-gradient(85deg, #352361 1%, rgb(64, 84, 178) 55%);
   }
 }
 
