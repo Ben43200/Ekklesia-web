@@ -203,8 +203,10 @@ nav .wrapper {
   transition: all 0.3s ease;
 }
 .nav-links li a:hover {
-  // background: #3a3b3c;
-  border-bottom: 5px solid black;
+  background: #3a3b3c;
+  @include media(desktop) {
+    border-bottom: 5px solid black;
+  }
 }
 .nav-links .mobile-item {
   display: none;
