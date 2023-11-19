@@ -163,6 +163,9 @@ nav {
   // background: #242526;
   background: #4054b2;
   border-radius: 0px 0px 10px 10px;
+  @include media(desktop) {
+    position: relative;
+  }
 }
 nav .wrapper {
   position: relative;
@@ -493,7 +496,7 @@ body {
 
   display: grid;
   grid-template-areas:
-    "navbar"
+    " navbar "
     "main "
     "footer ";
   // font-family: Arial, Verdana, sans-serif;
@@ -508,12 +511,12 @@ body {
   padding: 0;
 
   @include media(desktop) {
-    // grid-template-areas:
-    //   " . navbar ."
-    //   "  . main .  "
-    //   "footer footer footer ";
-    // grid-template-columns: 1fr 1240px 1fr;
-    //   }
+    grid-template-areas:
+      " . navbar ."
+      "  . main .  "
+      ". footer . ";
+    grid-template-columns: auto 1240px auto;
+
     padding: 0;
   }
 }

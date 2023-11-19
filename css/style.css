@@ -154,6 +154,11 @@ nav {
   background: #4054b2;
   border-radius: 0px 0px 10px 10px;
 }
+@media screen and (min-width: 1024px) {
+  nav {
+    position: relative;
+  }
+}
 
 nav .wrapper {
   position: relative;
@@ -464,7 +469,7 @@ footer {
 
 body {
   display: grid;
-  grid-template-areas: "navbar" "main " "footer ";
+  grid-template-areas: " navbar " "main " "footer ";
   grid-template-rows: auto 1fr auto;
   height: 100vh;
   row-gap: 20px;
@@ -474,6 +479,8 @@ body {
 }
 @media screen and (min-width: 1024px) {
   body {
+    grid-template-areas: " . navbar ." "  . main .  " ". footer . ";
+    grid-template-columns: auto 1240px auto;
     padding: 0;
   }
 }
