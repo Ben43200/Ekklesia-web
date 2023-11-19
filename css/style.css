@@ -153,7 +153,6 @@ nav {
   margin: 0;
   padding: 0;
   border-radius: 0px 0px 10px 10px;
-  background: #352361;
   background: linear-gradient(85deg, #352361 1%, rgb(64, 84, 178) 55%);
 }
 @media screen and (min-width: 1024px) {
