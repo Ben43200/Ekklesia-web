@@ -164,16 +164,17 @@ nav {
   padding: 0;
 
   // background: #242526;
-  // background: #4054b2;
+  background: #4054b2;
   background-size: 100% 100%;
   border-radius: 0px 0px 10px 10px;
   // background: rgb(0, 0, 0);
   // background: #352361;
 
-  background: linear-gradient(85deg, #352361 1%, rgba(64, 84, 178, 1) 55%);
+  // background: linear-gradient(85deg, #352361 1%, rgba(64, 84, 178, 1) 55%);
   @include media(desktop) {
     // position: relative;
     width: 1240px;
+    background: linear-gradient(85deg, #352361 1%, rgba(64, 84, 178, 1) 55%);
   }
 }
 nav .wrapper {
