@@ -155,6 +155,7 @@ nav {
   background: #4054b2;
   background-size: 100% 100%;
   border-radius: 0px 0px 10px 10px;
+  -webkit-background-clip: border-box;
 }
 @media screen and (min-width: 1024px) {
   nav {

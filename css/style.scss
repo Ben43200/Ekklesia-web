@@ -175,6 +175,7 @@ nav {
   //   #352361 1%,
   //   rgba(64, 84, 178, 1) 55%
   // );
+  -webkit-background-clip: border-box;
   @include media(desktop) {
     // position: relative;
     width: 1240px;
