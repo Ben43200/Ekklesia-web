@@ -158,12 +158,12 @@ nav {
   background-image: linear-gradient(85deg, #352361 1%, rgb(64, 84, 178) 55%);
   -webkit-background-clip: border-box;
 }
-
 @media screen and (min-width: 1024px) {
   nav {
     width: 1240px;
   }
 }
+
 nav .wrapper {
   position: relative;
   max-width: 1300px;
@@ -207,6 +207,7 @@ nav .wrapper {
     border-bottom: 5px solid black;
   }
 }
+
 .nav-links .mobile-item {
   display: none;
 }
@@ -452,12 +453,12 @@ h1 {
   text-align: center;
   padding-top: 50px;
 }
-
 @media screen and (min-width: 1024px) {
   h1 {
     font-size: 30px;
   }
 }
+
 header {
   grid-area: navbar;
 }
@@ -478,7 +479,6 @@ body {
   margin: 0;
   padding: 0;
 }
-
 @media screen and (min-width: 1024px) {
   body {
     grid-template-areas: " . navbar ." "  . main .  " "footer footer footer ";
@@ -486,6 +486,7 @@ body {
     padding: 0;
   }
 }
+
 footer {
   background-color: #3a3b3c;
   height: 80px;
@@ -511,18 +512,17 @@ footer {
   object-fit: cover;
   border-radius: 10px;
 }
-
 .grid-container {
   display: grid;
   grid-template-columns: 1fr;
   gap: 20px;
 }
-
 @media screen and (min-width: 1024px) {
   .grid-container {
     grid-gap: 20px;
   }
 }
+
 .box-image {
   display: flex;
   align-items: center;
@@ -534,12 +534,12 @@ footer {
   height: 300px;
   border-radius: 10px;
 }
-
 @media screen and (min-width: 1024px) {
   .box-image {
     height: 500px;
   }
 }
+
 h2 {
   font-size: 20px;
   font-weight: 800;
@@ -562,19 +562,20 @@ p {
   width: 100%;
   border-radius: 10px;
 }
-
 @media screen and (min-width: 1024px) {
   .box-info {
     width: 900px;
     place-self: center;
   }
 }
+
 @media screen and (min-width: 1024px) {
   .box-info:first-of-type {
     grid-auto-columns: auto;
     margin-bottom: 0;
   }
 }
+
 .prestations-container {
   display: flex;
   flex-direction: column;
@@ -598,12 +599,12 @@ p {
   padding-top: 20px;
   place-self: center;
 }
-
 @media screen and (min-width: 768px) {
   .gallery {
     width: 700px;
   }
 }
+
 .gallery > img {
   grid-area: 1/1;
   width: 100%;
@@ -648,7 +649,6 @@ main {
   height: 100%;
   place-self: center;
 }
-
 @media screen and (min-width: 768px) {
   .img-codage {
     width: 700px;
