@@ -614,6 +614,7 @@ p {
   grid-area: 1/1;
   width: 100%;
   aspect-ratio: 1.5;
+  height: 100%;
   -o-object-fit: cover;
   object-fit: cover;
   animation: r var(--d) linear infinite;
