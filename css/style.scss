@@ -624,7 +624,8 @@ p {
   -o-object-fit: cover;
   object-fit: cover;
   animation: r var(--d) linear infinite;
-  @include media(desktop) {
+  // @include media(desktop) {
+  @include media(tablet) {
     aspect-ratio: 1.8;
   }
 }
