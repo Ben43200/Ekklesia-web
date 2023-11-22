@@ -613,6 +613,11 @@ p {
   object-fit: cover;
   animation: r var(--d) linear infinite;
 }
+@media screen and (min-width: 1024px) {
+  .gallery > img {
+    aspect-ratio: 1.8;
+  }
+}
 
 .gallery > img:nth-child(2) {
   animation-delay: calc(-0.25 * var(--d));

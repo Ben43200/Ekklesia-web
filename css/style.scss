@@ -618,6 +618,9 @@ p {
   -o-object-fit: cover;
   object-fit: cover;
   animation: r var(--d) linear infinite;
+  @include media(desktop) {
+    aspect-ratio: 1.8;
+  }
 }
 
 .gallery > img:nth-child(2) {
