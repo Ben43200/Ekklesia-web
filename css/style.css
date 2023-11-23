@@ -525,12 +525,25 @@ footer {
   grid-template-columns: 1fr;
   gap: 20px;
 }
-
 @media screen and (min-width: 1024px) {
   .grid-container {
-    grid-gap: 20px;
+    grid-template-areas: "un deux" "trois quatre" "cinq six" "sept huit";
+    grid-template-columns: 1fr 1fr;
   }
 }
+
+@media screen and (min-width: 1024px) {
+  .box-image:first-child {
+    grid-area: un;
+  }
+  .box-image:nth-child(3) {
+    grid-area: quatre;
+  }
+}
+.box-info:last-child {
+  grid-area: sept;
+}
+
 .box-image {
   display: flex;
   align-items: center;
@@ -543,11 +556,6 @@ footer {
   border-radius: 10px;
 }
 
-@media screen and (min-width: 1024px) {
-  .box-image {
-    height: 500px;
-  }
-}
 h2 {
   font-size: 20px;
   font-weight: 800;
@@ -573,7 +581,6 @@ p {
 
 @media screen and (min-width: 1024px) {
   .box-info {
-    width: 900px;
     place-self: center;
   }
 }

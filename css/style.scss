@@ -527,11 +527,35 @@ footer {
   display: grid;
   grid-template-columns: 1fr;
   gap: 20px;
-}
-@include media(desktop) {
-  .grid-container {
-    grid-gap: 20px;
+  @include media(desktop) {
+    grid-template-areas:
+      "un deux"
+      "trois quatre"
+      "cinq six"
+      "sept huit";
+    grid-template-columns: 1fr 1fr;
   }
+}
+// @include media(desktop) {
+//   .grid-container {
+//     grid-gap: 20px;
+//   }
+// }
+@include media(desktop) {
+  .box-image:first-child {
+    grid-area: un;
+  }
+  .box-image:nth-child(3) {
+    grid-area: quatre;
+  }
+  // .box-image:nth-child(4) {
+  //   grid-area: cinq;
+  // }
+}
+
+.box-info:last-child {
+  grid-area: sept;
+  // background-color: red;
 }
 
 .box-image {
@@ -547,7 +571,7 @@ footer {
 }
 @include media(desktop) {
   .box-image {
-    height: 500px;
+    // height: 500px;
   }
 }
 
@@ -575,7 +599,7 @@ p {
 }
 @include media(desktop) {
   .box-info {
-    width: 900px;
+    // width: 900px;
     place-self: center;
   }
 }
