@@ -523,6 +523,7 @@ footer {
 .grid-container {
   display: grid;
   grid-template-columns: 1fr;
+  grid-template-areas: "un" "deux" "trois" "quatre" "cinq" "six" "sept" "huit";
   gap: 20px;
 }
 @media screen and (min-width: 1024px) {
@@ -541,7 +542,12 @@ footer {
   }
 }
 .box-info:last-child {
-  grid-area: sept;
+  grid-area: huit;
+}
+@media screen and (min-width: 1024px) {
+  .box-info:last-child {
+    grid-area: sept;
+  }
 }
 
 .box-image {

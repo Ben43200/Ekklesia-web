@@ -526,6 +526,10 @@ footer {
 .grid-container {
   display: grid;
   grid-template-columns: 1fr;
+  // grid-template-columns: auto;
+  grid-template-areas:
+    "un"
+    "deux" "trois" "quatre" "cinq" "six" "sept" "huit";
   gap: 20px;
   @include media(desktop) {
     grid-template-areas:
@@ -554,8 +558,11 @@ footer {
 }
 
 .box-info:last-child {
-  grid-area: sept;
-  // background-color: red;
+  grid-area: huit;
+  @include media(desktop) {
+    grid-area: sept;
+    // background-color: red;
+  }
 }
 
 .box-image {
