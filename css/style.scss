@@ -614,7 +614,7 @@ p {
 
 // @include media(desktop) {
 .box-info:first-of-type {
-  grid-auto-columns: auto;
+  // grid-auto-columns: auto;
   // margin-bottom: 0;
   margin: 20px 0px;
 }
@@ -710,12 +710,11 @@ p {
   // display: flex;
   // flex-direction: column;
   // justify-content: space-between;
+  grid-template-areas:
+    "un"
+    "deux" "trois" "quatre" "cinq" "six" "sept" "huit" "neuf" "dix";
+  gap: 25px;
   @include media(desktop) {
-    grid-template-areas:
-      "un"
-      "deux" "trois" "quatre" "cinq" "six" "sept" "huit" "neuf" "dix";
-    gap: 25px;
-
     grid-template-areas:
       "un deux"
       "trois quatre"
@@ -726,12 +725,17 @@ p {
     // grid-template-columns: 1fr;
   }
 }
-.box-info-service:first-child {
-  grid-area: deux;
-}
-.box-info-service:nth-child(5) {
-  grid-area: dix;
-}
+// @include media(desktop) {
+//   .box-info-service:first-child {
+//     grid-area: deux;
+//   }
+//   .box-info-service:nth-child(5) {
+//     grid-area: dix;
+//   }
+//   .box-image-service:nth-child(5) {
+//     grid-area: neuf;
+//   }
+// }
 // .box-info-service:nth-child(2) {
 //   grid-area: trois;
 // }
@@ -743,3 +747,10 @@ p {
 // .box-image-service:nth-child(5) {
 //   grid-area: sept;
 // }
+
+.box-info-service:last-child {
+  grid-area: dix;
+}
+.box-info-servicename:nth-child(4) {
+  grid-area: huit;
+}

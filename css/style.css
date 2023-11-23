@@ -589,7 +589,6 @@ p {
   }
 }
 .box-info:first-of-type {
-  grid-auto-columns: auto;
   margin: 20px 0px;
 }
 
@@ -677,20 +676,20 @@ p {
 } 
 .service-container {
   display: grid;
+  grid-template-areas: "un" "deux" "trois" "quatre" "cinq" "six" "sept" "huit" "neuf" "dix";
+  gap: 25px;
 }
 @media screen and (min-width: 1024px) {
   .service-container {
-    grid-template-areas: "un" "deux" "trois" "quatre" "cinq" "six" "sept" "huit" "neuf" "dix";
-    gap: 25px;
     grid-template-areas: "un deux" "trois quatre" "cinq six" "sept huit" "neuf dix";
     grid-template-columns: 1fr 1fr;
   }
 }
 
-.box-info-service:first-child {
-  grid-area: deux;
+.box-info-service:last-child {
+  grid-area: dix;
 }
 
-.box-info-service:nth-child(5) {
-  grid-area: dix;
+.box-info-servicename:nth-child(4) {
+  grid-area: huit;
 }/*# sourceMappingURL=style.css.map */
