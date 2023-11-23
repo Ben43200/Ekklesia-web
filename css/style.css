@@ -681,4 +681,10 @@ main {
     width: 700px;
     height: 100%;
   }
-} /*# sourceMappingURL=style.css.map */
+} 
+.service-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 25px;
+}/*# sourceMappingURL=style.css.map */
