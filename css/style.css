@@ -676,8 +676,21 @@ p {
   }
 } 
 .service-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  gap: 25px;
+  display: grid;
+}
+@media screen and (min-width: 1024px) {
+  .service-container {
+    grid-template-areas: "un" "deux" "trois" "quatre" "cinq" "six" "sept" "huit" "neuf" "dix";
+    gap: 25px;
+    grid-template-areas: "un deux" "trois quatre" "cinq six" "sept huit" "neuf dix";
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.box-info-service:first-child {
+  grid-area: deux;
+}
+
+.box-info-service:nth-child(5) {
+  grid-area: dix;
 }/*# sourceMappingURL=style.css.map */
