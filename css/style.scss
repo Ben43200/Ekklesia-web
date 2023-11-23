@@ -611,12 +611,13 @@ p {
   }
 }
 
-@include media(desktop) {
-  .box-info:first-of-type {
-    grid-auto-columns: auto;
-    margin-bottom: 0;
-  }
+// @include media(desktop) {
+.box-info:first-of-type {
+  grid-auto-columns: auto;
+  // margin-bottom: 0;
+  margin: 20px 0px;
 }
+// }
 
 .prestations-container {
   display: flex;
@@ -687,9 +688,9 @@ p {
   place-content: center;
 }
 
-main {
-  display: grid;
-}
+// main {
+//   display: grid;
+// }
 
 .img-codage {
   width: 100%;

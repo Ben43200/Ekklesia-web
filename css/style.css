@@ -590,12 +590,11 @@ p {
     place-self: center;
   }
 }
-@media screen and (min-width: 1024px) {
-  .box-info:first-of-type {
-    grid-auto-columns: auto;
-    margin-bottom: 0;
-  }
+.box-info:first-of-type {
+  grid-auto-columns: auto;
+  margin: 20px 0px;
 }
+
 .prestations-container {
   display: flex;
   flex-direction: column;
@@ -664,10 +663,6 @@ p {
   margin: 0;
   display: grid;
   place-content: center;
-}
-
-main {
-  display: grid;
 }
 
 .img-codage {
