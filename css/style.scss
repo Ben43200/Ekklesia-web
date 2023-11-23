@@ -206,7 +206,8 @@ nav .wrapper {
 
 @include media(desktop) {
   .nav-links li a:hover {
-    border-bottom: 5px solid black;
+    // border-bottom: 5px solid black;
+    border-bottom: 4px solid #86b98b;
   }
 }
 

@@ -204,7 +204,7 @@ nav .wrapper {
 
 @media screen and (min-width: 1024px) {
   .nav-links li a:hover {
-    border-bottom: 5px solid black;
+    border-bottom: 4px solid #86b98b;
   }
 }
 .nav-links .mobile-item {
