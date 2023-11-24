@@ -464,7 +464,6 @@ main {
   grid-area: main;
   padding: 0px 5px;
   row-gap: 20px;
-  padding-top: 150px;
 }
 
 body {
@@ -493,7 +492,7 @@ footer {
 }
 
 .title-container {
-  height: 10rem;
+  height: 9rem;
   background-color: #131f53;
   display: flex;
   justify-content: center;
@@ -501,7 +500,6 @@ footer {
   align-items: center;
   width: 100%;
   border-radius: 10px;
-  position: fixed;
   z-index: 98;
 }
 @media screen and (min-width: 1024px) {
@@ -697,4 +695,12 @@ p {
   .box-info-service:nth-child(7) {
     grid-area: sept;
   }
+}
+
+.mobile-item:hover.drop-menu:active {
+  display: none;
+}
+
+#dropmenu {
+  display: none;
 }/*# sourceMappingURL=style.css.map */
