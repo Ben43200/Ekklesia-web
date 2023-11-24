@@ -750,7 +750,16 @@ p {
 
 .box-info-service:last-child {
   grid-area: dix;
+  background-color: red;
 }
-.box-info-servicename:nth-child(4) {
+.box-info-service:nth-child(7) {
   grid-area: huit;
+  @include media(desktop) {
+    grid-area: sept;
+    background-color: blue;
+  }
+}
+.box-info-service:first-child {
+  // grid-area: huit;
+  background-color: red;
 }

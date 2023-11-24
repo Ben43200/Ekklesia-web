@@ -688,8 +688,19 @@ p {
 
 .box-info-service:last-child {
   grid-area: dix;
+  background-color: red;
 }
 
-.box-info-servicename:nth-child(4) {
+.box-info-service:nth-child(7) {
   grid-area: huit;
+}
+@media screen and (min-width: 1024px) {
+  .box-info-service:nth-child(7) {
+    grid-area: sept;
+    background-color: blue;
+  }
+}
+
+.box-info-service:first-child {
+  background-color: red;
 }/*# sourceMappingURL=style.css.map */
